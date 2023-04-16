@@ -1,0 +1,25 @@
+<div class="container-fluid text-center p-3">
+  <div class="row">
+    <div class="col">
+      <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es">
+        <img src="/assets/images/by-nc-sa.png" height="32px" style="margin: 0px 20px 6px 0px">
+      </a>
+      2020 - Magara
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <nav>
+    {% for item in site.data.legal %}
+      <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+        {{ item.name }}
+      </a>
+      {% if forloop.last == false %}|{% endif %}
+    {% endfor %}
+      </nav>
+    </div>
+  </div>
+</div>
+
+<div class="navbar-space"></div>
+

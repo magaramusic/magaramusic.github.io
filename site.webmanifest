@@ -1,0 +1,12 @@
+{
+  "short_name": "magaramusic",
+  "name": "Magara",
+  "icons": [{
+    "src": "assets/images/icon.jpg",
+    "type": "image/png",
+    "sizes": "128x128"
+  }],
+  "start_url": "/",
+  "background_color": "#fafafa",
+  "theme_color": "#fafafa"
+}

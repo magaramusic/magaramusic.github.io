@@ -1,0 +1,18 @@
+- name: Instagram
+  class: fab fa-instagram
+  link: https://www.instagram.com/magaramusic
+- name: Youtube
+  class: fab fa-youtube
+  link: https://www.youtube.com/c/MagaraMusic
+- name: Spotify
+  class: fab fa-spotify
+  link: https://open.spotify.com/artist/16izkuYfzM5ncRLpqgTriB
+- name: Soundcloud
+  class: fab fa-soundcloud
+  link: https://soundcloud.com/magaramusic
+- name: Bandcamp
+  class: fab fa-bandcamp
+  link: https://magara.bandcamp.com
+- name: Twitter
+  class: fab fa-twitter
+  link: https://twitter.com/magaramusic

@@ -1,0 +1,99 @@
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:locale" content="{{ site.lang }}" />
+{% if page.seo_description %}
+  <meta name="description" content="{{ page.seo_description }}" />
+  <meta property="og:description" content="{{ page.seo_description }}" />
+{% else %}
+  <meta name="description" content="{{ site.description }}" />
+  <meta property="og:description" content="{{ page.description }}" />
+{% endif %}
+<meta name="google" content="notranslate" />
+<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+{% if page.seo_image %}
+  <meta property="og:image" content="{{ site.url }}{{ page.seo_image }}" />
+  <meta property="og:image:alt" content="{{ page.title }}" />
+  {% if page.seo_image_width %}
+    <meta property="og:image:width" content="{{ page.seo_image_width }}" />
+  {% endif %}
+  {% if page.seo_image_height %}
+    <meta property="og:image:height" content="{{ page.seo_image_height }}" />
+  {% endif %}
+{% elsif site.seo_image %}
+  <meta property="og:image" content="{{ site.url }}{{ site.seo_image }}" />
+  <meta property="og:image:alt" content="{{ page.title }}" />
+  {% if site.seo_image_width %}
+    <meta property="og:image:width" content="{{ site.seo_image_width }}" />
+  {% endif %}
+  {% if site.seo_image_height %}
+    <meta property="og:image:height" content="{{ site.seo_image_height }}" />
+  {% endif %}
+{% endif %}
+{% if page.seo_type %}
+  <meta property="og:type" content="{{ page.seo_type }}" />
+{% else %}
+  <meta property="og:type" content="website" />
+{% endif %}
+{% if page.seo_audio && page.seo_audio_type %}
+  <meta property="og:audio" content="{{ site.url }}{{ page.seo_audio }}" />
+  <meta property="og:audio:type" content="{{ page.seo_audio_type }}" />
+{% endif %}
+
+{% if page.seo_music_duration %}
+  <meta name="music:duration" content="{{ page.seo_music_duration }}" />
+{% endif %}
+{% if page.seo_music_album %}
+  <meta name="music:album" content="{{ page.seo_music_album }}" />
+{% endif %}
+{% if page.seo_music_album_track %}
+  <meta name="music:album:track" content="{{ page.seo_music_album_track }}" />
+{% endif %}
+{% if page.seo_music_release_date %}
+  <meta name="music:release_date" content="{{ page.seo_music_release_date }}" />
+{% endif %}
+{% if page.seo_music_musician %}
+  <meta name="music:musician" content="{{ page.seo_music_musician }}" />
+{% endif %}
+
+{% if page.seo_video_url %}
+<meta property="og:video:type" content="text/html">
+<meta property="og:video:url" content="{{ page.seo_video_url }}">
+<meta property="og:video:secure_url" content="{{ page.seo_video_url }}">
+<meta property="og:video:width" content="1280">
+<meta property="og:video:height" content="720">
+{% endif %}
+
+{% if page.seo_mobile_spotify_url %}
+  <meta name="al:android:app_name" content="Spotify" />
+  <meta name="al:android:package" content="com.spotify.music" />
+  <meta name="al:android:url" content="{{ page.seo_mobile_spotify_url }}" />
+  <meta name="al:ios:app_name" content="Spotify" />
+  <meta name="al:ios:app_store_id" content="324684580" />
+  <meta name="al:ios:url" content="{{ page.seo_mobile_spotify_url }}" />
+{% endif %}
+
+{% if page.seo_mobile_youtube_url %}
+  <meta property="al:ios:app_name" content="YouTube">
+  <meta property="al:ios:app_store_id" content="544007664">
+  <meta property="al:ios:url" content="{{ page.seo_mobile_youtube_url }}">
+  <meta property="al:android:app_name" content="YouTube">
+  <meta property="al:android:package" content="com.google.android.youtube">
+  <meta property="al:android:url" content="{{ page.seo_mobile_youtube_url }}">
+{% endif %}
+{% if page.seo_web_youtube_url %}
+  <meta property="al:web:url" content="{{ page.seo_web_youtube_url }}">
+{% endif %}
+
+{% if site.twitter %}
+  <meta name="twitter:site" content="@{{ site.twitter.username | remove:'@' }}" />
+  <meta name="twitter:title" content="{{ page.title }}" />
+  {% if page.seo_description %}
+    <meta name="twitter:description" content="{{ page.seo_description }}" />
+  {% endif %}
+  {% if page.seo_image %}
+    <meta name="twitter:image" content="{{ site.url }}{{ page.seo_image }}" />
+    <meta name="twitter:image:alt" content="{{ page.title }}" />
+  {% endif %}
+  <meta name="twitter:card" content="summary" />
+{% endif %}
