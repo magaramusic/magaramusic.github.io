@@ -10,7 +10,6 @@ plugins:
 
 
 baseurl: "" # the subpath of your site, e.g. /blog
-# url: "https://www.magaramusic.com" # the base hostname & protocol for your site, e.g. http://example.com
 url: "https://magaramusic.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 logo: /assets/images/icon.png
 
@@ -23,7 +22,7 @@ exclude:
 # SEO and OG global variables
 title: Magara
 lang: es_ES
-email: magara@magaramusic.com
+email: magaramusica@gmail.com
 description: >-
   Es sencillo, es sólo amor
 twitter:

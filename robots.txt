@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.magaramusic.com/sitemap.xml
+Sitemap: https://magaramusic.github.io/sitemap.xml
